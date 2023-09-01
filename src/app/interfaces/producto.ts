@@ -4,5 +4,6 @@ export interface Producto {
     Descripcion: string
     Precio: number
     Categoria: string
+    url: string
 }
 

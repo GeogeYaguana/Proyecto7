@@ -1,0 +1,29 @@
+.horizontal-card-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en filas adicionales */
+    justify-content: space-between;
+  }
+
+
+  .example-card {
+    flex: 0 0 calc(33.33% - 10px);
+    margin-bottom: 20px;
+    margin-right: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    
+    /* Estilo de borde */
+    border: 1px solid #ccc; /* Grosor y color del borde */
+    padding: 10px; /* Espacio interno entre el borde y el contenido */
+  }
+  .container {
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center; /* Centra el texto horizontalmente */
+    font-family: Arial, sans-serif; /* Cambia la fuente del texto */
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color del texto */
+  }
+  

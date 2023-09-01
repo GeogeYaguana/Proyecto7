@@ -1,8 +1,7 @@
-<h4>Basic mat-select</h4>
 <mat-form-field>
   <mat-label>Categoria</mat-label>
   <mat-select (selectionChange)="onProductSelected($event)">
-    <mat-option *ngFor="let producto of data1" [value]="producto.Categoria">{{producto.Categoria}}</mat-option>
+    <mat-option *ngFor="let categoria of uniqueCategories()" [value]="categoria">{{categoria}}</mat-option>
   </mat-select>
 </mat-form-field>
 
@@ -10,29 +9,29 @@
 
     <!-- Position Column -->
     <ng-container matColumnDef="ID">
-      <th mat-header-cell *matHeaderCellDef> No. </th>
+      <th mat-header-cell *matHeaderCellDef> Identificador </th>
       <td mat-cell *matCellDef="let element"> {{element.ID}} </td>
     </ng-container>
   
     <!-- Name Column -->
     <ng-container matColumnDef="NombreProducto">
-      <th mat-header-cell *matHeaderCellDef> Name </th>
-      <td mat-cell *matCellDef="let element"> {{element.Categoria}} </td>
+      <th mat-header-cell *matHeaderCellDef> Nombre</th>
+      <td mat-cell *matCellDef="let element"> {{element.NombreProducto}} </td>
     </ng-container>
   
     <!-- Weight Column -->
     <ng-container matColumnDef="Descripcion">
-      <th mat-header-cell *matHeaderCellDef> Weight </th>
+      <th mat-header-cell *matHeaderCellDef> Descripcion </th>
       <td mat-cell *matCellDef="let element"> {{element.Descripcion}} </td>
     </ng-container>
   
     <!-- Symbol Column -->
     <ng-container matColumnDef="Precio">
-      <th mat-header-cell *matHeaderCellDef> Symbol </th>
+      <th mat-header-cell *matHeaderCellDef> Precio</th>
       <td mat-cell *matCellDef="let element"> {{element.Precio}} </td>
     </ng-container>
     <ng-container matColumnDef="Categoria">
-        <th mat-header-cell *matHeaderCellDef> Symbol </th>
+        <th mat-header-cell *matHeaderCellDef> Categoria </th>
         <td mat-cell *matCellDef="let element"> {{element.Categoria}} </td>
       </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

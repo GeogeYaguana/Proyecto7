@@ -38,5 +38,12 @@ onProductSelected(event: any) {
   });
 
 }
+uniqueCategories() {
+  const uniqueSet = new Set<string>();
+  this.data1.forEach((producto) => {
+    uniqueSet.add(producto.Categoria);
+  });
+  return Array.from(uniqueSet);
+}
 
 }
