@@ -2,10 +2,10 @@
   "name": "core-app",
   "version": "0.0.0",
   "scripts": {
-    "build:prod": "ng build --configuration production --base-href /core-app/",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --configuration production --base-href /core-app/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
 
