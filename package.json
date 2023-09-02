@@ -2,7 +2,7 @@
   "name": "core-app",
   "version": "0.0.0",
   "scripts": {
-    "build:prod": "ng build --configuration production --base-href /Proyecto7/",
+    "build:prod": "ng build --configuration production --base-href /core-app/",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
